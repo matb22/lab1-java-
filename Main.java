@@ -33,16 +33,18 @@ public class Main {
     public int charToNum(char x ) {
         return x % 48   ;
     }
-    public bool isPositive (int x ) {
+    public boolean isPositive (int x ) {
             if (x >= 0) {
-                return True ; 
+                return true ; 
             }
+            return false ;
     }
-    public bool is2Digits(int x){
+    public boolean is2Digits(int x){
             if ((x >=10) && (x <= 99) ) {
-                return True ;
+                return true ;
             }
-    }
+            return false ;
+        }        
 
 
 }
