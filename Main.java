@@ -1,11 +1,41 @@
 import java.util.Scanner;
 
 public class Main {
+
+
     public static void main(String[] args) {
 
 
         Scanner sc = new Scanner(System.in);
         Main obj = new Main() ;
+        
+
+        System.out.println("выберите номер задачи :");
+        System.out.println("1)");
+        int numberOfTask = sc.nextInt() ;
+        
+
+
+        switch (numberOfTask) {
+            case 1:
+                System.out.println(obj.fraction(12.43)) ;
+                break;
+            case 2 :
+                int task1 = sc.nextInt();
+        
+                if(task1 >= 10 ) {
+                    System.out.println(obj.sumLastNums(task1)) ;
+                }
+                break ;
+            default:
+                break;
+        }
+
+
+
+
+
+
 
         // System.out.println("блок 1 - задание 1 - Дробная часть")
         //1-1 
@@ -33,15 +63,18 @@ public class Main {
     public int charToNum(char x ) {
         return x % 48   ;
     }
-    public bool isPositive (int x ) {
+    public boolean isPositive (int x ) {
             if (x >= 0) {
-                return True ; 
+                
+                return true ; 
             }
+            return false ;
     }
-    public bool is2Digits(int x){
+    public boolean is2Digits(int x){
             if ((x >=10) && (x <= 99) ) {
-                return True ;
+                return true ;
             }
+            return false ;
     }
 
 
