@@ -319,7 +319,7 @@ public class Main {
     }
     public String listNums (int x){
         String string = "";
-        for(int i = 1; i <= x; i++){
+        for(int i = 0; i <= x; i++){
             string += i + " ";
         }
         return string ;
@@ -341,10 +341,11 @@ public class Main {
         return string ;
     }
     public int pow (int x, int y){
-        for(int i = 1; i < y; i++){
-            x *= x;
+        int res = 1;
+        for(int i = 1; i <= y; i++){
+            res *= x;
         }
-        return x ;
+        return res ;
     }
     public int numLen (long x){
         int count = 0;
